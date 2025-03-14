@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
     import PocketBase from "pocketbase";
     import { onMount } from "svelte";
     import { writable, derived } from "svelte/store";
@@ -114,4 +114,42 @@
             </tbody>
         </table>
     </div>
-</main>
+</main> -->
+<script>
+    let showPopup = false;
+  </script>
+  
+  <div class="flex justify-center items-center ">
+    <button 
+      class="bg-blue-500 text-white px-4 py-2 rounded-md shadow-lg"
+      on:click={() => showPopup = true}
+    >
+      Pesan Sekarang
+    </button>
+  </div>
+  
+  {#if showPopup}
+    <div class="fixed inset-0 flex justify-center items-center bg-black opacity-50">
+      <div class="bg-white p-6 rounded-lg shadow-xl w-80">
+        <h2 class="text-lg font-semibold mb-4">Pesan Produk</h2>
+        <p class="text-gray-700 mb-4">
+          Menu:
+       
+        </p>
+        <a 
+          href="https://wa.me/6262312345678?text=Menu%20%3A%0A1.%20Kimbab%20Spicy%20Chicken%20-%2010k%0A2.%20Icebread%20-%205k%0A3.%20Bundling%20-%2012K%0A%0ANama%20%3A%20%0APesanan%20%3A%0A(nb%20%3A%20Tulis%20nama%20produk%20dan%20jumlahnya)"
+          target="_blank"
+          class="block bg-green-500 text-white text-center py-2 rounded-md mt-2"
+        >
+          Pesan via WhatsApp
+        </a>
+        <button 
+          class="mt-4 bg-red-500 text-white px-4 py-2 rounded-md w-full"
+          on:click={() => showPopup = false}
+        >
+          Tutup
+        </button>
+      </div>
+    </div>
+  {/if}
+  
