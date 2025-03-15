@@ -72,7 +72,7 @@
         <div class="h-screen z-40" id="page">
             <h1 class="text-5xl lg:text-7xl font-bold text-white text-center pt-26">Savora</h1>
             <h1 class="text-sm lg:text-5xl  text-white text-center pt-7 mx-4">
-                Kami menghadirkan Kimbab Spicy Chicken yang menggugah selera dengan isian ayam pedas yang juicy, serta Icebread yang lembut dan menyegarkan, cocok untuk menemani setiap gigitan pedasmu            </h1>
+                Kami menghadirkan Kimbab Spicy Chicken yang menggugah selera dengan isian ayam pedas yang juicy serta Icebread yang lembut dan menyegarkan, cocok untuk menemani setiap gigitan pedasmu            </h1>
 
             <div class="flex justify-center my-10">
                 <a href="https://api.whatsapp.com/send/?phone=6282331372166&text=Menu+%3A%0A1.+Kimbab+Spicy+Chicken+-+10k%0A2.+Icebread+-+5k%0A3.+Bundling+-+12K%0A%0ANama+%3A+%0APesanan+%3A%0A%28nb+%3A+Tulis+nama+produk+dan+jumlahnya%29&type=phone_number&app_absent=0uy">
