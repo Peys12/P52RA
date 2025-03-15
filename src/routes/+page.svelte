@@ -57,7 +57,7 @@
  
 </script>
     
-    <div class="min-h-screen  bg-[#191B2B] flex flex-col pb-52  "
+    <div class="min-h-screen  bg-[#191B2B] flex flex-col pb-24  "
     class:opacity-100={$show2==1&&$show1==1}
     class:opacity-80={$show1==2}
     class:opacity-70={$show2==2}
