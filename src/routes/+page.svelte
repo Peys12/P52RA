@@ -175,8 +175,8 @@
                     </button>
                 </div>
                 
-                </section>
-        </div>
+                
+        
         <div>
             <div class="outline-1 outline-white h-0 mx-10 mb-6 mt-58">
                 <br class=" outline-1 outline-white">
@@ -204,6 +204,7 @@
                     </div>
                 </div>
             </div>
+        </section>
         </div>
     </div>
 
