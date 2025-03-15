@@ -12,6 +12,7 @@
     let show2 = writable<number>(1)
     let pr1 = writable<number>(1)
     let pr2 = writable<number>(1)
+    let pr3 = writable<number>(1)
     let k = ("")
     let m = ("")
     let b2 = writable<number>(1)
@@ -56,7 +57,7 @@
  
 </script>
     
-    <div class="min-h-screen bg-[#191B2B] flex flex-col pb-52  "
+    <div class="min-h-screen  bg-[#191B2B] flex flex-col pb-52  "
     class:opacity-100={$show2==1&&$show1==1}
     class:opacity-80={$show1==2}
     class:opacity-70={$show2==2}
@@ -75,7 +76,7 @@
 
             <div class="flex justify-center my-10">
                 <a href="https://api.whatsapp.com/send/?phone=6282331372166&text=Menu+%3A%0A1.+Kimbab+Spicy+Chicken+-+10k%0A2.+Icebread+-+5k%0A3.+Bundling+-+12K%0A%0ANama+%3A+%0APesanan+%3A%0A%28nb+%3A+Tulis+nama+produk+dan+jumlahnya%29&type=phone_number&app_absent=0uy">
-                    <button class="bg-[#FF3A27] text-white outline-1 py-[4px] hover:bg-red-600 rounded-xl outline-[#FF3A27] px-10 font-bold text-sm">
+                    <button class="bg-[#FF3A27] text-white outline-1 py-[6px] hover:bg-red-600 rounded-xl outline-[#FF3A27] px-12 font-bold text-sm">
                         Buy Now
                     </button>
                 </a>
@@ -90,15 +91,14 @@
             <!-- pemesanan -->
             <section id="pesan" class="flex flex-col space-y-10 ">
                 <!-- Kimbab -->
-                <button 
+                    <button 
                     class="card bg-[#3B4252]  p-5  h-44 ml-10 transition-all duration-500 ease-in-out "
                     class:w-74={$pr1 === 2}
                     class:w-40={$pr1 === 1}
-                    
                     onclick={p1}
-                    transition:fade={{ duration: 500 }}                >
-                {#if $pr1==1 }  
-                <div class="flex flex-col">
+                    transition:fade={{ duration: 500 }}>
+                    {#if $pr1==1 }  
+                    <div class="flex flex-col">
                     <img src="kim.jpg" alt="Kimbab" class="w-28 h-28 object-cover rounded-lg ml-1" />
                     <h2 class=" text-[11px] font-bold text-white mt-3  text-left ml-1">Kimbab Spicy Chicken</h2>
                 </div>
@@ -106,33 +106,33 @@
                 <div class=" relative flex">
                     <div class="flex flex-col ">
                         <img src="kim.jpg" alt="Kimbab" class="w-28 h-28 object-cover rounded-lg z-50 ml-1 " />
-                        <h2 class=" text-[11px] font-bold text-white mt-3  text-left ml-1">Kimbab Spicy Chicken</h2>
+                        <h2 class=" text-[14px] font-bold text-white mt-3  text-left ml-5">Harga : 10k</h2>
                     </div>
                     <div>
                         <div class=" absolute w-40 transition-opacity duration-500 delay-1000" 
                         class:opacity-100={$pr1 == 2} 
                         class:opacity-0={Number($pr1) === 1} 
                         >
-                            <p class=" text-[12px] pl-5 pr-3 z-40 text-left text-white "> {k}</p>
-                        </div>
-                    </div>
-                    <div class=" absolute">
-                        {#if $b1==2}
-                        <button  class="bg-[#FF3A27] z-50 text-white  py-[4px] hover:bg-red-600 rounded-xl  px-5 font-bold text-sm mt-29 ml-34  " onclick={s1}>
-                            Ingredients
-                        </button>               
-                        {/if}
+                        <p class=" text-[12px] pl-5 pr-3 z-40 text-left text-white "> {k}</p>
                     </div>
                 </div>
-                
-                {/if}
-                </button>
+                <div class=" absolute">
+                    {#if $b1==2}
+                    <button  class="bg-[#FF3A27] z-50 text-white  py-[4px] hover:bg-red-600 rounded-xl  px-5 font-bold text-sm mt-29 ml-34  " onclick={s1}>
+                        Ingredients
+                    </button>               
+                    {/if}
+                </div>
+            </div>
+            
+            {/if}
+        </button>
             
                 <!-- Icebread -->
                 <div class=" relative">
                     
                     <button 
-                    class=" absolute card bg-[#3B4252] lg:w-[300px] p-5 h-44 right-0 mr-10 transition-all duration-500 ease-in-out" 
+                    class=" absolute card bg-[#3B4252]  p-5 h-44 right-0 mr-10 transition-all duration-500 ease-in-out" 
                     class:w-74={$pr2 === 2}
                     class:w-40={$pr2 === 1}
                     onclick={p2}
@@ -152,7 +152,7 @@
                             
                             <div class="flex flex-col absolute right-0 mr-[22px]">
                                 <img src="icebread.jpg" alt=""  class=" w-28 h-28 object-cover rounded-lg mr-[2px]"/>
-                                <h2 class=" text-[14px] font-bold text-white mt-3  text-center mr-[2px]">Icebread</h2>
+                                <h2 class=" text-[14px] font-bold text-white mt-3  text-center mr-[2px]">Harga : 5k</h2>
                             </div>        
                             <div>
                                 <div class=" absolute w-40 transition-opacity duration-500 " 
@@ -174,9 +174,40 @@
                             
                     </button>
                 </div>
+                
                 </section>
         </div>
+        <div>
+            <div class="outline-1 outline-white h-0 mx-10 mb-6 mt-58">
+                <br class=" outline-1 outline-white">
+            </div>
+            <div class=" text-3xl font-bold text-white  text-center">
+                <h2>SPECIAL OFFER</h2>
+            </div>
+            <div class=" flex justify-center ">
+                <div class=" card bg-[#3B4252] h-50 w-78 mt-5 ">
+                    <h3 class=" text-center text-white text-md mt-2 font-bold"> Bundling Hemat</h3>
+                    <div class=" absolute flex">
+                        <div >
+                            <img class=" w-[84px] h-[84px] rounded-xl mt-10 ml-5 absolute z-10" src="kim.jpg" alt="">
+                            <img class=" w-[84px] h-[84px] rounded-xl z-50 absolute mt-24 ml-20" src="icebread.jpg" alt="">
+                        </div>
+                        <div>
+                            <li class=" text-md text-white font-semibold mt-10 ml-30">Kimbab Spicy Chicken</li>
+                            <li class=" text-md text-white font-semibold ml-30">Icebread</li>
+                        </div>
+                        
+                    </div>
+                    <div class=" mt-[80px] text-right font-bold mr-8">
+                        <p class=" line-through text-white text-xl"> Rp15000</p>
+                        <p class=" text-white text-md"> Rp12000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- POPUP -->
     {#if $show1==2}
     <div class="fixed inset-0 z-50 flex justify-center items-center bg-blend-darken">
         <div class="bg-[#333946] p-6 rounded-lg   w-80">
