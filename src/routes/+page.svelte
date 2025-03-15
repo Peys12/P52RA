@@ -178,7 +178,7 @@
             </div>
         </div>
         <div>
-            <div class="outline-1 outline-white h-0 mx-10 mb-8 mt-60">
+            <div class="outline-1 outline-white h-0 mx-10 mb-8 mt-20">
                 <br class=" outline-1 outline-white">
             </div>
             <div class=" text-3xl font-bold text-white  text-center">
