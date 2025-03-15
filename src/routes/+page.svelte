@@ -89,7 +89,7 @@
             </div>
             
             <!-- pemesanan -->
-            <section id="pesan" class="flex flex-col space-y-10 ">
+            <div id="pesan" class="flex flex-col space-y-10 ">
                 <!-- Kimbab -->
                     <button 
                     class="card bg-[#3B4252]  p-5  h-44 ml-10 transition-all duration-500 ease-in-out "
@@ -175,10 +175,10 @@
                     </button>
                 </div>
                 
-                
-        
+            </div>
+        </div>
         <div>
-            <div class="outline-1 outline-white h-0 mx-10 mb-6 mt-58">
+            <div class="outline-1 outline-white h-0 mx-10 mb-8 mt-60">
                 <br class=" outline-1 outline-white">
             </div>
             <div class=" text-3xl font-bold text-white  text-center">
@@ -204,7 +204,6 @@
                     </div>
                 </div>
             </div>
-        </section>
         </div>
     </div>
 
